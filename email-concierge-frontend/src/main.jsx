@@ -60,28 +60,19 @@
 //   </List>
 // );
 
-// const App = () => (
-//   <Admin dataProvider={dataProvider}>
-//     <Resource name="emails" list={EmailList} />
-//   </Admin>
-// );
+// // const App = () => (
+// //   <Admin dataProvider={dataProvider}>
+// //     <Resource name="emails" list={EmailList} />
+// //   </Admin>
+// // );
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 import * as React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  Admin,
-  Resource,
-  List,
-  Datagrid,
-  TextField,
-  useNotify,
-  useRefresh,
-  useRedirect,
-  Button,
-} from "react-admin";
+import { Admin, Resource, List, Datagrid, TextField, useNotify, useRefresh, useRedirect, Button } from "react-admin";
 import { fetchUtils } from "react-admin";
+
 
 function csvToJSON(csv) {
   const lines = csv.trim().split("\n");
@@ -99,7 +90,7 @@ function csvToJSON(csv) {
 const dataProvider = {
   getList: async () => {
     const url =
-      "https://storage.googleapis.com/hackathon-team1-bucket/Transfer/response.csv";
+      "https://storage.cloud.google.com/hackathon-team1-bucket/Transfer/response.csv";
     try {
       const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
