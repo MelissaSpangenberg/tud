@@ -7,8 +7,8 @@ export const emailList = () => (
             <TextField source="emailClass" label="Email Class" />
             <TextField source="sentiment" label="Sentiment" />
             <TextField source="urgency" label="Urgency" />
-            <TextField source="sanitized" label="Sanitized" />
             <TextField source="draft" label="Draft Reponse" />
+            <TextField source="sanitized" label="Sanitized" />
         </Datagrid>
     </List>
 );

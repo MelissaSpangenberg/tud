@@ -30,7 +30,7 @@ const dataProvider = {
         sentiment: item.sentiment,
         urgency: item.urgency,
         draft: item.draftReply,
-        sanitized: item.sanitizedText || "[REDACTED]",
+        sanitized: item.sanitizedText || "[Personal Information Removed]",
       }));
       return { data, total: data.length };
     } catch (error) {
