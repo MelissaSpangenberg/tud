@@ -25,7 +25,7 @@ const dataProvider = {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const csvText = await response.text();
       const data = csvToJSON(csvText).map((item, index) => ({
-        id: index + 1,
+        id: index,
         emailClass: item.supportGroup,
         sentiment: item.sentiment,
         urgency: item.urgency,
