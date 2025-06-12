@@ -18,7 +18,7 @@ export const emailShow = () => (
     <Show>
         <SimpleShowLayout>
             <TextField source="id" label="ID" />
-            <TextField source="emailClass" label="Email Class" />
+            <TextField source="emailClass" label="Support Groups" />
             <TextField source="sentiment" label="Sentiment" />
             <TextField source="urgency" label="Urgency" />
             <TextField source="draft" label="Draft Reponse" />
