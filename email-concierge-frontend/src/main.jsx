@@ -19,7 +19,7 @@ function csvToJSON(csv) {
 // ✅ Clean single dataProvider
 const dataProvider = {
   getList: async () => {
-    const url = "response.csv";
+    const url = "src/response.csv";
     try {
       const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
