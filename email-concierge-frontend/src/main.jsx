@@ -16,7 +16,7 @@ function csvToJSON(csv) {
   });
 }
 
-// ✅ Clean single dataProvider
+// Clean single dataProvider
 const dataProvider = {
   getList: async () => {
     const url = "src/response.csv";
@@ -49,7 +49,7 @@ const dataProvider = {
   updateMany: () => Promise.resolve({ data: [] }),
 };
 
-// ✅ Minimal layout, no menu
+// Minimal layout, no menu
 const App = () => (
   <Admin dataProvider={dataProvider} layout={({ children }) => <>{children}</>}>
     <Resource name="emails" list={emailList}  show={emailShow} />
