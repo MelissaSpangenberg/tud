@@ -1,5 +1,5 @@
-import { Admin, List, Datagrid, TextField, Resource } from "react-admin";
-import { emailList } from "./emailList";
+import { Admin, List, Datagrid, TextField, Resource, ListGuesser, ShowGuesser } from "react-admin";
+import { emailList, emailShow } from "./emailList";
 import { createRoot } from "react-dom/client";
 
 // CSV → JSON parser
@@ -51,7 +51,7 @@ const dataProvider = {
 // ✅ Minimal layout, no menu
 const App = () => (
   <Admin dataProvider={dataProvider} layout={({ children }) => <>{children}</>}>
-    <Resource name="emails" list={emailList} />
+    <Resource name="emails" list={emailList}  show={emailShow} />
   </Admin>
 );
 
