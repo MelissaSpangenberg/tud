@@ -52,7 +52,7 @@ const dataProvider = {
 // Minimal layout, no menu
 const App = () => (
   <Admin dataProvider={dataProvider} layout={({ children }) => <>{children}</>}>
-    <Resource name="emails" list={emailList}  show={emailShow} />
+    <Resource name="emailList" list={emailList}  show={emailShow} />
   </Admin>
 );
 
