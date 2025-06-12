@@ -32,6 +32,7 @@ const dataProvider = {
         draft: item.draftReply,
         sanitized: item.sanitizedText || "[Personal Information Removed]",
       }));
+        console.log(data)
       return { data, total: data.length };
     } catch (error) {
       console.error("Failed to load CSV:", error);
