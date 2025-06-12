@@ -5,7 +5,7 @@ export const emailList = () => (
     <List>
         <Datagrid>
             <TextField source="id" label="ID" />
-            <TextField source="emailClass" label="Email Class" />
+            <TextField source="emailClass" label="Support Group" />
             <TextField source="sentiment" label="Sentiment" />
             <TextField source="urgency" label="Urgency" />
             <TextField source="draft" label="Draft Reponse" />
