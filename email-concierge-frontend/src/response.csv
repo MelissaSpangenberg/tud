@@ -1,1 +1,1 @@
-id; emailClass; sentiment; urgency; sanitized; draft
+id, emailClass, sentiment, urgency, draft, sanitized
